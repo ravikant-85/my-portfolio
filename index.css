@@ -184,6 +184,7 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    transition: all .5s linear;
 }
 
 .btn-box .btn:hover {
@@ -368,6 +369,47 @@ span {
     background: var(--second-bg-color);
 }
 
+
+/* My Projects */
+.project-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.p-box{
+    width: 100%;
+    background: var(--bg-color);
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.6s;
+    border: .2rem solid var(--main-color);
+    padding: 1.5rem;
+    border-radius: .7rem;
+}
+.p-box:hover{
+    background: var(--second-bg-color);
+    color: #fff;
+    
+}
+.box-name{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.p-box h2{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+.box-main{
+    font-size: 1.4rem;
+}
+.box-skill{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 5rem;
+}
 /* education */
 
 .education {
@@ -377,6 +419,7 @@ span {
     flex-direction: column;
     min-height: auto;
     padding-bottom: 5rem;
+    background: var(--second-bg-color);
 }
 
 .education .education-row {
@@ -401,6 +444,12 @@ span {
 .education-box .education-content {
     position: relative;
     padding-left: 2rem;
+
+    background: var(--bg-color);
+}
+.education-box .education-content:hover {
+    background: var(--second-bg-color);
+    color: var(--main-color);
 }
 
 .education-box .education-content::before {
@@ -432,12 +481,14 @@ span {
     width: 0;
     height: 100%;
     background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
     z-index: -1;
     transition: .5s;
 }
 
 .education-content .content:hover::before {
     width: 100%;
+    background: var(--second-bg-color);
 }
 
 .education-content .content .year {
@@ -574,7 +625,7 @@ span {
 .contact{
     min-height: auto;
     padding-bottom: 7rem;
-
+    background: var(--second-bg-color);
 }
 
 .contact form{
@@ -655,7 +706,9 @@ span {
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
-
+.footer:hover {
+    background: var(--bg-color);
+}
 .footer-text p{
     font-size: 1.6rem;
 }
